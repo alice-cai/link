@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_logo" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/loginButtonsTableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/select_student_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/student_button"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"/>
+
+            <ImageButton
+                android:id="@+id/select_employer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/employer_button"
+                android:gravity="center"
+                android:background="@drawable/shape"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="20dp"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

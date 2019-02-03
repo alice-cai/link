@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPurple">#9ea7cd</color>
+    -->
+
+    <color name="colorPrimary">#9EA7CD</color>
+    <color name="colorPrimaryDark">#9EA7CD</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorPurple">#9ea7cd</color>
+
+    <color name="colorPrimaryLogin">#9EA7CD</color>
+    <color name="colorPrimaryDarkLogin">#9EA7CD</color>
+    <color name="colorAccentLogin">#FFFFFF</color>
+    <color name="textColorLogin">#5a6389</color>
+</resources>
