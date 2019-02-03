@@ -1,47 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_marginTop="0dp">
+<RelativeLayout android:id="@+id/RelativeLayout01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="top">
 
-        <ImageView
-            android:id="@+id/job_card_image_view"
-            android:layout_width="match_parent"
-            android:layout_height="361dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/test"/>
+    <ImageButton
+        android:id="@+id/go_to_matching_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/match_button"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:layout_centerInParent="true"/>
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableRow
-                android:id="@+id/swipeButtonsTableRow"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp">
-
-                <ImageButton
-                    android:id="@+id/swipe_left_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/left_button"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"/>
-
-                <ImageButton
-                    android:id="@+id/swipe_right_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/right_button"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"/>
-            </TableRow>
-
-        </TableLayout>
-    </LinearLayout>
+</RelativeLayout>

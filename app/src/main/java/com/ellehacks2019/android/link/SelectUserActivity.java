@@ -1,11 +1,11 @@
 package com.ellehacks2019.android.link;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.content.Intent;
-import android.widget.*;
+import android.widget.ImageButton;
 
 public class SelectUserActivity extends AppCompatActivity {
     @Override
