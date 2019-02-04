@@ -2,6 +2,7 @@ package com.ellehacks2019.android.link;
 
 import android.app.Activity;
 import android.app.Notification;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
@@ -13,12 +14,10 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher.ViewFactory;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 
 public class MatchActivity extends Activity {
-    public static final String  CHANNEL_1_ID = "matchnotif";
+
+    public static final String CHANNEL_1_ID = "matchnotif";
 
     private Integer images [] = {R.drawable.job1, R.drawable.job2, R.drawable.job3, R.drawable.job4, R.drawable.job5};
     private int currImage = 0;
@@ -37,27 +36,18 @@ public class MatchActivity extends Activity {
         setImageRotateListener();
 
         notificationManager = NotificationManagerCompat.from(this);
-        Timer timer = new Timer();
-
-        /*
-        TimerTask tt = new TimerTask() {
-            @Override
-            public void run() {
-                sendOnChannel1();
-            }
-
-        };
-
-        timer.schedule(tt, 5000, 10000);*/
     }
 
-    public void sendOnChannel1(){//View v) {
-        String title = "Found Match!";
-        String message = "You have been matched with Accenture for the DevOps Specialist position";
+    public void sendOnChannel1() {
+        String title = "New Link!";
+        String message = "You have been matched with Accenture for the DevOps Specialist position.";
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_1_ID)
-                .setSmallIcon(R.drawable.linklogotiny)
+                .setSmallIcon(R.drawable.ic_link)
+                .setLargeIcon(BitmapFactory.decodeResource(this.getResources(), R.drawable.notif_icon))
                 .setContentTitle(title)
                 .setContentText(message)
+                .setStyle(new NotificationCompat.BigTextStyle()
+                        .bigText(message))
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setVibrate(new long[] {1000, 1000, 1000})
                 .build();
@@ -77,7 +67,6 @@ public class MatchActivity extends Activity {
 
         //imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(MatchActivity.this, android.R.anim.slide_in_left));
         //imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(MatchActivity.this, android.R.anim.slide_out_right));
-
     }
 
     private void setImageRotateListener() {
@@ -87,12 +76,6 @@ public class MatchActivity extends Activity {
             public void onClick(View arg0) {
                 imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(MatchActivity.this, R.anim.slide_in_right));
                 imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(MatchActivity.this, R.anim.slide_out_left));
-
-                numSwipes++;
-                if (numSwipes == 3) {
-                    numSwipes = 0;
-                    sendOnChannel1();
-                }
 
                 currImage++;
                 if(currImage == 5) {
@@ -132,6 +115,4 @@ public class MatchActivity extends Activity {
         final ImageSwitcher imageSwitcher = (ImageSwitcher) findViewById(R.id.imageSwitcher);
         imageSwitcher.setImageResource(images[currImage]);
     }
-
-
 }

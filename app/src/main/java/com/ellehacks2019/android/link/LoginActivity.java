@@ -53,10 +53,13 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             "foo@example.com:hello", "bar@example.com:world"
     };
 
+    /**
+     * Fake credentials for student and employer.
+     */
     private static final String STUDENT_EMAIL = "ellehacks2019@gmail.com";
-    private static final String STUDENT_PASSWORD = "12345";
+    private static final String STUDENT_PASSWORD = "pass123";
     private static final String EMPLOYER_EMAIL = "jobs@rbc.com";
-    private static final String EMPLOYER_PASSWORD = "12345";
+    private static final String EMPLOYER_PASSWORD = "pass123";
 
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
@@ -213,12 +216,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     }
 
     private boolean isEmailValid(String email) {
-        //TODO: Replace this with your own logic
         return email.contains("@");
     }
 
     private boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
         return password.length() > 4;
     }
 

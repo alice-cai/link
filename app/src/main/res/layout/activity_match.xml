@@ -17,8 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="swipe left"
-            android:background="@drawable/shape"
+            android:text="@string/swipe_left"
+            android:background="@drawable/button"
             android:layout_marginEnd="5dp"/>
 
         <Button
@@ -26,8 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="swipe right"
-            android:background="@drawable/shape"
+            android:text="@string/swipe_right"
+            android:background="@drawable/button"
             android:layout_marginStart="5dp"/>
     </LinearLayout>
 

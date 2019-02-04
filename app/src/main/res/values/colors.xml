@@ -16,4 +16,6 @@
     <color name="colorPrimaryDarkLogin">#9EA7CD</color>
     <color name="colorAccentLogin">#FFFFFF</color>
     <color name="textColorLogin">#5a6389</color>
+
+    <color name="buttonPressColor">#dbdce4</color>
 </resources>

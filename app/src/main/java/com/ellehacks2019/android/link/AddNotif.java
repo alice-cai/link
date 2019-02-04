@@ -6,7 +6,7 @@ import android.app.NotificationManager;
 import android.os.Build;
 
 public class AddNotif extends Application {
-    public static final String  CHANNEL_1_ID = "matchnotif";
+    public static final String CHANNEL_1_ID = "matchnotif";
 
     @Override
     public void onCreate() {
