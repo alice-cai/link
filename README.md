@@ -2,7 +2,7 @@
 
 ## Description
 
-*Link* is an Android application that helps students connect with potential employers.
+*Link* is a mobile social media platform designed to help high school and university students access a wide variety of job opportunities and expand their professional network.
 
 ## How It Works
 
