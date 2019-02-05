@@ -10,10 +10,10 @@ See [here](https://youtu.be/IhxP-gXklns) to see a quick demo of the *Link* app.
 
 ## Screenshots
 
-![home-screen](https://user-images.githubusercontent.com/34670205/52247351-9080d800-28b7-11e9-80f0-8723fafae6a0.png)
+![home-screen](https://user-images.githubusercontent.com/34670205/52247595-7e536980-28b8-11e9-840e-66d08d2af171.png)
 
-![messages](https://user-images.githubusercontent.com/34670205/52247355-937bc880-28b7-11e9-86c6-61c84c511505.png)
+![messaging](https://user-images.githubusercontent.com/34670205/52247601-814e5a00-28b8-11e9-84cf-a379c8e93be9.png)
 
-![data-analysis](https://user-images.githubusercontent.com/34670205/52247360-95de2280-28b7-11e9-83f6-26b31b4c6ad5.png)
+![data-analysis](https://user-images.githubusercontent.com/34670205/52247603-827f8700-28b8-11e9-89aa-c9826ca77715.png)
 
-![swiping](https://user-images.githubusercontent.com/34670205/52247363-9aa2d680-28b7-11e9-8670-01e5e3ccc240.png)
+![swiping](https://user-images.githubusercontent.com/34670205/52247606-84494a80-28b8-11e9-8b93-2d5c990b7954.png)
