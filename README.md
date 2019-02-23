@@ -4,7 +4,7 @@
 
 This is a prototype of *Link*, a mobile social media platform designed to help high school and university students access a wide variety of job opportunities and expand their professional network.
 
-Disclaimer: This is not a working application. Most features listed below have not been implemented.
+Disclaimer: This was made in under 36 hours at ElleHacks 2019 and is not a working application. Most features listed below have not been implemented.
 
 ## How It Works
 
